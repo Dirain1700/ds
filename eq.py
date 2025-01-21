@@ -25,7 +25,7 @@ elif D > 0:
     x1 = (-c1 + D ** 0.5) / (2 * c2)
     x2 = (-c1 - D ** 0.5) / (2 * c2)
     print(f"二次方程式 {str(c2)[:1] if abs(c2) else c2}x ** 2 + {c1}x + {c0} = 0 の解は x = {x1}, {x2} です。")
-else:
+# else:
     # 実数解が1つ, 重解
-    x = -c1 / (2 * c2)
-    print(f"二次方程式 {str(c2)[:1] if abs(c2) else c2}x ** 2 + {c1}x + {c0} = 0 の解は x = {x} です。")
+    # x = -c1 / (2 * c2)
+    # print(f"二次方程式 {str(c2)[:1] if abs(c2) else c2}x ** 2 + {c1}x + {c0} = 0 の解は x = {x} です。")
