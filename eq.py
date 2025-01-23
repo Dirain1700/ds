@@ -27,7 +27,7 @@ else:
     if c2 == 0:
         print(f"一次方程式 {getReadableSign(c1)}x + {c0} = 0 の解は x = {-c0 / c1} です。")
     else:
-        # 実数解が2つのとき。降順に解の公式で求める
+        # 実数解が2つのとき。解の公式で求める
         x1 = (-c1 + D ** 0.5) / (2 * c2)
         x2 = (-c1 - D ** 0.5) / (2 * c2)
         print(f"二次方程式 {getReadableSign(c2)}x ** 2 + {getReadableSign(c1)}x + {c0} = 0 の解は x = {x1}, {x2} です。")
