@@ -26,5 +26,5 @@ for i in arr:
     
 stdevp = (offSquare / length) ** 0.5
 
-print(f"標準偏差 {stdevp}")
+print(f"標準偏差 {stdevp} (自作)")
 print(f"標準偏差 {statistics.pstdev(arr)} (statistics)")
