@@ -14,17 +14,22 @@ if length == 0:
     print("入力がありません。")
     exit()
 
-average = amount / length
+def getAverage(amo, leng):
+    return amo / leng
+
+average = getAverage(amo=amount, leng=length)
+
 print(f"平均値 {average} (自作)")
 print(f"平均値 {statistics.mean(arr)} (statistics)")
 
-# 標準偏差 stdevp = sqrt((Σ(x - x̄) ** 2) / n)
-offSquare = 0
-# Σ(x - x̄) ** 2
-for i in arr:
-    offSquare += (i - average) ** 2
-    
-stdevp = (offSquare / length) ** 0.5
+def getStdevP(array, ave, leng):
+    # 標準偏差 stdevp = sqrt((Σ(x - x̄) ** 2) / n)
+    offSquare = 0
+    # Σ(x - x̄) ** 2
+    for i in array:
+        offSquare += (i - ave) ** 2
 
-print(f"標準偏差 {stdevp} (自作)")
+    return (offSquare / leng) ** 0.5
+
+print(f"標準偏差 {getStdevP(arr, ave=average, leng=length)} (自作)")
 print(f"標準偏差 {statistics.pstdev(arr)} (statistics)")
