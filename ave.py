@@ -5,7 +5,7 @@ amount = 0
 length = 0
 
 for i in input("数字をカンマ区切りで入力してください。").split(","):
-    num = int(i.strip())
+    num = int(i)
     arr.append(num)
     amount += num
     length += 1
